@@ -29,7 +29,7 @@ commands:
  ```
  
  
-Permissões:
+Permissions:
 ```
 jcmds.admin - use to add permision to modify commands
 ```
