@@ -1,0 +1,19 @@
+#Mensagens de ajuda
+1: '&9-- &lJCommands&9 --'
+2: '&9Alias: &lJCmds'
+3: '&9/JCmds help &e- Mostra esta tela de ajuda.'
+4: '&9/JCmds add <comando> <mensagem> &e- Adiciona uma nova mensagem'
+5: '&9/JCmds del <comando> &e- Remove um comando'
+6: '&9/JCmds set <comando> <mensagem> &e- Altera a mensagem de um comando'
+7: '&9/JCmds reload &e- Recarrega as configurações'
+8: '&9 --------- '
+
+#Mensagens dos comandos
+Error: '&cCommando inválido! Use /JCmds help'
+AddSuccess: '&aComando &e%command% &aadicionado com sucesso!'
+AddError: '&cNão foi possível adicionar o comando &e%command%'
+SetSuccess: '&aComando &e%command% &aalterado com sucesso!'
+SetError: '&cNão foi possível alterar o comando &e%command%'
+DelSuccess: '&aComando &e%command% &adeletado com sucesso!'
+DelError: '&cNão foi possível deletar o comando &e%command%'
+Reload: '&aConfigurações recarregadas com sucesso!'

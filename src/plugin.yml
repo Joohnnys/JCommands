@@ -1,0 +1,9 @@
+name: JCommands
+version: 1
+author: Joohnnys
+main: me.joohnnys.jcommands.JCommands
+commands:
+  JCommands:
+    usage: /<command>
+    description: JCommands info
+  JCmds:

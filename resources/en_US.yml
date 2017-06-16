@@ -1,0 +1,19 @@
+#Help messages
+1: '&9-- &lJCommands&9 --'
+2: '&9Alias: &lJCmds'
+3: '&9/JCmds help &e- Show this help.'
+4: '&9/JCmds add <comando> <mensagem> &e- Add a new message'
+5: '&9/JCmds del <comando> &e- Remove a command'
+6: '&9/JCmds set <comando> <mensagem> &e- Set a command'
+7: '&9/JCmds reload &e- Reload the configuration'
+8: '&9 --------- '
+
+#Commands messages
+Error: '&cCommand error! Use /JCmds help'
+AddSuccess: '&aCommand &e%command% &aadded!'
+AddError: '&cUnable to add command &e%command%'
+SetSuccess: '&aSet command &e%command% &asuccessfully!'
+SetError: '&cUnable to set command &e%command%'
+DelSuccess: '&aCommand &e%command% &adeleted!'
+DelError: '&cUnable to delete command &e%command%'
+Reload: '&aConfiguration was reloaded!'

@@ -1,0 +1,10 @@
+#Languages available: en_US, pt_BR
+#You can customize the language file!
+lang: en_US
+
+#Register commands here.
+#Commands registred in-game or in console will automatically registred here.
+commands:
+  exemplo: '&4Isto � um exemplo de comando!'
+  example: '&4This is a command example!'
+  plugins: '&eThis message replace /plugins'
