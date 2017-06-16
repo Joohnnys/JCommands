@@ -27,6 +27,13 @@ commands:
   example: '&4This is a command example!'
   plugins: '&eThis message replace /plugins'
  ```
+ 
+ 
+Permissões:
+```
+jcmds.admin - use to add permision to modify commands
+```
+
 
 It's very easy to use, it's simple!!!
   
