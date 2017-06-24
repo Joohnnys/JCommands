@@ -2,9 +2,25 @@
 #You can customize the language file!
 lang: en_US
 
+#Disable commands here.
+#Command registred here will replace all commands below
+disable:
+  - help #disable /help for everyone
+ 
 #Register commands here.
 #Commands registred in-game or in console will automatically registred here.
-commands:
-  exemplo: '&4Isto � um exemplo de comando!'
-  example: '&4This is a command example!'
-  plugins: '&eThis message replace /plugins'
+#You can use %player% in message to return the player display name.
+messages:
+  exemplo:
+   - '&4Isto é um exemplo de comando!'
+  example:
+   - '&4This is a command example!'
+  plugins:
+   - '&eThis message replace /plugins'
+  list-example:
+    - '&7This'
+    - '&7is a'
+    - '&cLIST!'
+  
+aliases:
+  jcmds: 'jcommands'
