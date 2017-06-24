@@ -26,13 +26,16 @@ public class Listeners implements Listener {
 		for (String cmd : disabledCommands) {
 			if (event.getMessage().equalsIgnoreCase("/" + cmd)) {
 				event.setCancelled(true);
+				return;
 			}
 		}
 		
 		for (String cmd : configSectionA.getKeys(false)) {
-			if (event.getMessage().startsWith("/" + cmd)) {
-				Bukkit.getServer().dispatchCommand(player, event.getMessage().replaceFirst("/" + cmd, plugin.getConfig().getString("aliases." + cmd)));
+			String msg = event.getMessage().toLowerCase();
+			if (msg.startsWith("/" + cmd)) {
+				Bukkit.getServer().dispatchCommand(player, msg.replaceFirst("/" + cmd, plugin.getConfig().getString("aliases." + cmd)));
 				event.setCancelled(true);
+				return;
 			}
 		}
 
@@ -40,6 +43,7 @@ public class Listeners implements Listener {
 			if (event.getMessage().equalsIgnoreCase("/" + cmd)) {
 				player.sendMessage(FormatString.colored(Config.pluginConfig().getStringList("messages." + cmd)));
 				event.setCancelled(true);
+				return;
 			}
 		}
 	}
