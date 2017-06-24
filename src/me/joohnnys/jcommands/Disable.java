@@ -11,18 +11,22 @@ public class Disable {
 	static Config Config = new Config();
 
 	public static boolean add(CommandSender sender, String[] args) {
-		if (args.length > 2) {
+		if (args.length > 1) {
 			List<String> disable = Config.pluginConfig().getStringList("disable");
 			String cmd = "";
 			for (int i = 1; i < args.length; i++) {
-				cmd = cmd + args[i] + " ";
+				if (i < (args.length - 1)) {
+					cmd = cmd + args[i] + " ";
+				} else {
+					cmd = cmd + args[i];
+				}
 			}
-			
-			if(disable.contains(cmd)) {
+
+			if (disable.contains(cmd)) {
 				sender.sendMessage(FormatString.command(Config.getMessage("command-add-error"), cmd, ""));
 				return true;
 			}
-			
+
 			disable.add(cmd);
 			Config.pluginConfig().set("disable", disable);
 			Config.saveConfig();
@@ -32,22 +36,27 @@ public class Disable {
 			sender.sendMessage(FormatString.colored(Config.getMessage("error")));
 			return true;
 		}
-		
+
 	}
-	
+
 	public static boolean del(CommandSender sender, String[] args) {
-		if(args.length > 1) {
+		if (args.length > 1) {
 			List<String> disable = Config.pluginConfig().getStringList("disable");
 			String cmd = "";
 			for (int i = 1; i < args.length; i++) {
-				cmd = cmd + args[i] + " ";
+				if (i < (args.length - 1)) {
+					cmd = cmd + args[i] + " ";
+				} else {
+					cmd = cmd + args[i];
+				}
+
 			}
-			
-			if(!disable.contains(cmd)) {
+
+			if (!disable.contains(cmd)) {
 				sender.sendMessage(FormatString.command(Config.getMessage("command-del-error"), cmd, ""));
 				return true;
 			}
-			
+
 			disable.remove(cmd);
 			Config.pluginConfig().set("disable", disable);
 			Config.saveConfig();
@@ -58,5 +67,5 @@ public class Disable {
 			return true;
 		}
 	}
-	
+
 }
