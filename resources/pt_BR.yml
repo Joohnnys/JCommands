@@ -29,3 +29,4 @@ command-del-error: '&cNão foi possível deletar o comando &e%command%'
 
 error: '&cCommando inválido! Use /JCmds help'
 reload: '&aConfigurações recarregadas com sucesso!'
+number-exception: '&e%number% &cnão é um número válido!'
