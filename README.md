@@ -19,7 +19,7 @@ Change # to line number
 Commands it's very useful to create, set and remove custom commands in-game or in console,
 but you can edit these commands on config.yml
 
-[Config.yml](docs/src/config.yml)
+[Config.yml](src/config.yml)
  
  
 Permissions:
