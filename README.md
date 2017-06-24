@@ -32,5 +32,4 @@ It's very easy to use, it's simple!!!
   
 I'm working a new version with new features like command alias and more...
   
-Descrição em português:
-https://github.com/Joohnnys/JCommands/wiki/Descri%C3%A7%C3%A3o-em-portugu%C3%AAs
+[Descrição em português](https://github.com/Joohnnys/JCommands/wiki/Descri%C3%A7%C3%A3o-em-portugu%C3%AAs)
