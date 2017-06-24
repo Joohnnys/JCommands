@@ -12,7 +12,7 @@ public class Aliases {
 
 	public static boolean add(CommandSender sender, String[] args) {
 		if (args.length >= 4) {
-			String cmd = args[2];
+			String cmd = args[2].toLowerCase();
 			if (configSection.getKeys(false).contains(cmd)) {
 				sender.sendMessage(FormatString.colored(Config.getMessage("command-add-error")));
 				return true;
