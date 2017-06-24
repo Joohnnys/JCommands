@@ -3,11 +3,9 @@ package me.joohnnys.jcommands;
 import java.io.File;
 
 import org.bukkit.Bukkit;
-import org.bukkit.command.CommandExecutor;
-import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class JCommands extends JavaPlugin implements Listener, CommandExecutor {
+public class JCommands extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		Bukkit.getServer().getPluginManager().registerEvents(new Listeners(), this);
